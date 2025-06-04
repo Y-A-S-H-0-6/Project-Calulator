@@ -1,0 +1,102 @@
+/* #Calculator{
+  border:  1px solid rgb(46, 40, 40);
+  border-radius: 5px;
+  width: 200px;
+}
+
+#display{
+  margin: 10px;
+  width: 85%;
+}
+
+.button-container{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.button{
+  width: 45px;
+  height: 45px;
+  margin: 3px;
+} */
+
+/* General layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Calculator Container */
+#Calculator {
+  background-color: #2c2c2c;
+  border-radius: 15px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Display input */
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  text-align: right;
+  padding: 10px;
+  background-color: #121212;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Button grid layout */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Buttons style */
+.button {
+  background-color: #3b3b3b;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover and active effects */
+.button:hover {
+  background-color: #505050;
+}
+
+.button:active {
+  transform: scale(0.95);
+  background-color: #606060;
+}
+
+/* Special styles */
+.button:nth-child(1) {
+  background-color: #ff4d4d;
+}
+
+.button:nth-child(1):hover {
+  background-color: #e60000;
+}
+
+.button:nth-child(14) {
+  background-color: #4caf50;
+}
+
+.button:nth-child(14):hover {
+  background-color: #388e3c;
+}
